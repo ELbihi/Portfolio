@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brahim Bassor — Ingénieur IA & Data Science, ENIAD Berkane. Stage été 2026." />
+  <title>Brahim Bassor — Ingénieur IA & Data Science</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Brahim Bassor — Accueil">
+        <svg class="navbar__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28" aria-hidden="true">
+          <!-- Brain outline -->
+          <path d="M11 6C8.2 6 6 8.2 6 11c0 1.4.56 2.66 1.46 3.58C6.56 15.38 6 16.6 6 18c0 2.42 1.72 4.44 4 4.9V24h12v-1.1c2.28-.46 4-2.48 4-4.9 0-1.4-.56-2.62-1.46-3.42C25.44 13.66 26 12.4 26 11c0-2.8-2.2-5-5-5-1.02 0-1.96.3-2.74.82A4.97 4.97 0 0016 6.5c-.46 0-.9.06-1.32.18A5.01 5.01 0 0011 6z" stroke="url(#ai-grad)" stroke-width="1.6" stroke-linejoin="round"/>
+          <!-- Neural dots -->
+          <circle cx="16" cy="13" r="1.4" fill="url(#ai-grad)"/>
+          <circle cx="12" cy="16" r="1" fill="url(#ai-grad)" opacity=".8"/>
+          <circle cx="20" cy="16" r="1" fill="url(#ai-grad)" opacity=".8"/>
+          <!-- Connections -->
+          <line x1="16" y1="13" x2="12" y2="16" stroke="url(#ai-grad)" stroke-width="1" opacity=".5"/>
+          <line x1="16" y1="13" x2="20" y2="16" stroke="url(#ai-grad)" stroke-width="1" opacity=".5"/>
+          <line x1="12" y1="16" x2="16" y2="19" stroke="url(#ai-grad)" stroke-width="1" opacity=".5"/>
+          <line x1="20" y1="16" x2="16" y2="19" stroke="url(#ai-grad)" stroke-width="1" opacity=".5"/>
+          <circle cx="16" cy="19" r="1.4" fill="url(#ai-grad)"/>
+          <defs>
+            <linearGradient id="ai-grad" x1="6" y1="6" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#2563eb"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>B.B</span>
+      </a>
+
+      <nav class="navbar__nav" id="nav-menu" role="navigation" aria-label="Navigation principale">
+        <a href="#hero" class="nav-link">Accueil</a>
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#experiences" class="nav-link">Expériences</a>
+        <a href="#skills" class="nav-link">Compétences</a>
+        <a href="#projects" class="nav-link">Projets</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn--primary btn--sm">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <!-- Decorative blobs -->
+    <div class="blob blob--1" aria-hidden="true"></div>
+    <div class="blob blob--2" aria-hidden="true"></div>
+    <div class="blob blob--3" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <!-- Left column -->
+      <div class="hero__left">
+        <div class="hero__available">
+          <span class="hero__dot" aria-hidden="true"></span>
+          DISPONIBLE — STAGE ÉTÉ 2026
+        </div>
+
+        <h1 class="hero__heading">
+          <span class="hero__greeting">Bonjour, je suis</span>
+          <span class="hero__name">Brahim Bassor</span>
+        </h1>
+
+        <div class="hero__typewriter" aria-live="polite">
+          <span id="typewriter-text"></span><span class="cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero__bio">
+          Étudiant en 4ème année à l'ENIAD Berkane, je construis des solutions
+          intelligentes alliant IA, NLP et développement full-stack.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">Voir mes projets</a>
+          <a href="assets/img/brahim bassor  (bihi).pdf" class="btn btn--secondary" download aria-label="Télécharger le CV de Brahim Bassor">Télécharger CV</a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/brahim-bassor-006b04198/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:bassor.brahim1@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="hero__right">
+        <div class="hero__avatar-wrap">
+          <div class="hero__avatar-ring" aria-hidden="true"></div>
+          <div class="hero__avatar">
+            <img src="assets/img/avatar.jpg" alt="Photo de Brahim Bassor" width="280" height="280" loading="eager" onerror="this.onerror=null;this.src='';this.closest('.hero__avatar').classList.add('hero__avatar--placeholder')" />
+          </div>
+
+          <!-- Floating chips -->
+          <div class="float-chip float-chip--1">Python</div>
+          <div class="float-chip float-chip--2">React</div>
+          <div class="float-chip float-chip--3">FastAPI</div>
+          <div class="float-chip float-chip--4">PyTorch</div>
+          <div class="float-chip float-chip--5">spaCy</div>
+        </div>
+
+        <!-- Currently building card -->
+        <div class="hero__building-card">
+          <div class="hero__building-dot" aria-hidden="true"></div>
+          <div>
+            <div class="hero__building-label">Currently building</div>
+            <div class="hero__building-title">Plateforme NLP Intelligente</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__left reveal">
+        <div class="section__tag">À Propos</div>
+        <h2 class="section__title gradient-text">À Propos de Moi</h2>
+        <p class="about__text">
+          En tant qu'ingénieur passionné par l'intersection entre les données et le code,
+          je transforme des problématiques complexes en solutions technologiques performantes.
+          Diplômé de l'ENIAD Berkane, j'ai développé une expertise polyvalente allant de
+          la conception de modèles de Deep Learning au déploiement d'applications Web robustes.
+        </p>
+        <p class="about__text">
+          À la recherche d'un <strong>stage d'été 2026</strong> en Intelligence Artificielle
+          ou analyse de données.
+        </p>
+
+        <div class="about__languages">
+          <span class="lang-badge">🇲🇦 Arabe</span>
+          <span class="lang-badge">🇫🇷 Français</span>
+          <span class="lang-badge">🇬🇧 Anglais</span>
+        </div>
+      </div>
+
+      <div class="about__right reveal">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-card__number">3</div>
+            <div class="stat-card__label">Stages Réalisés</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">6+</div>
+            <div class="stat-card__label">Projets Livrés</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">3</div>
+            <div class="stat-card__label">Langues Maîtrisées</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">4+</div>
+            <div class="stat-card__label">Ans d'Expérience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPÉRIENCES ===== -->
+  <section class="section experiences" id="experiences">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__tag">Parcours</div>
+        <h2 class="section__title gradient-text">Mon Parcours Professionnel</h2>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"></div>
+
+        <!-- Item 1 -->
+        <div class="timeline__item timeline__item--right reveal">
+          <div class="timeline__node" aria-hidden="true"></div>
+          <div class="timeline__card card">
+            <div class="timeline__card-header">
+              <span class="company-badge">EST Oujda</span>
+              <span class="timeline__period">Mars – Juin 2024</span>
+            </div>
+            <h3 class="timeline__role">Web IA Developer <span class="role-type">· Stage PFE</span></h3>
+            <p class="timeline__desc">
+              Développement d'une application web de classification d'images ML intégrée
+              dans un backend Django. Pipeline upload → traitement → prédiction en temps réel.
+            </p>
+            <div class="badge-list">
+              <span class="badge">Python</span>
+              <span class="badge">Django</span>
+              <span class="badge">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline__item timeline__item--left reveal">
+          <div class="timeline__node" aria-hidden="true"></div>
+          <div class="timeline__card card">
+            <div class="timeline__card-header">
+              <span class="company-badge">SIADEV · Casablanca</span>
+              <span class="timeline__period">Avr – Juin 2023</span>
+            </div>
+            <h3 class="timeline__role">Full-stack Developer <span class="role-type">· Stage</span></h3>
+            <p class="timeline__desc">
+              Développement backend pour une plateforme e-commerce B2B : authentification,
+              gestion utilisateurs, schéma BDD relationnelle.
+            </p>
+            <div class="badge-list">
+              <span class="badge">Laravel</span>
+              <span class="badge">PHP</span>
+              <span class="badge">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline__item timeline__item--right reveal">
+          <div class="timeline__node" aria-hidden="true"></div>
+          <div class="timeline__card card">
+            <div class="timeline__card-header">
+              <span class="company-badge">ORMVAO · Ouarzazate</span>
+              <span class="timeline__period">Juil – Août 2023</span>
+            </div>
+            <h3 class="timeline__role">Frontend Developer <span class="role-type">· Stage</span></h3>
+            <p class="timeline__desc">
+              Application web responsive de gestion des formations et affichage structuré
+              des données participants.
+            </p>
+            <div class="badge-list">
+              <span class="badge">React.js</span>
+              <span class="badge">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="education reveal">
+        <h3 class="education__title">Formation Académique</h3>
+        <div class="education__grid">
+          <div class="edu-card card">
+            <div class="edu-card__year">2024–2027</div>
+            <div class="edu-card__school">ENIAD Berkane</div>
+            <div class="edu-card__degree">Diplôme Ingénieur IA</div>
+          </div>
+          <div class="edu-card card">
+            <div class="edu-card__year">2023–2024</div>
+            <div class="edu-card__school">EST Oujda</div>
+            <div class="edu-card__degree">Licence Pro – Business Intelligence</div>
+          </div>
+          <div class="edu-card card">
+            <div class="edu-card__year">2021–2023</div>
+            <div class="edu-card__school">EST Oujda</div>
+            <div class="edu-card__degree">DUT – Développement Informatique</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPÉTENCES ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__tag">Compétences</div>
+        <h2 class="section__title gradient-text">Stack Technologique</h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1 1 .03 2.798-1.414 2.798H4.212c-1.444 0-2.414-1.798-1.414-2.798L4.2 15.3"/></svg>
+          </div>
+          <h3 class="skill-card__title">AI &amp; Machine Learning</h3>
+          <div class="badge-list">
+            <span class="badge">Machine Learning</span>
+            <span class="badge">Deep Learning</span>
+            <span class="badge">CNN</span>
+            <span class="badge">MLP</span>
+            <span class="badge">Reinforcement Learning</span>
+            <span class="badge">Classification d'images</span>
+          </div>
+        </div>
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg>
+          </div>
+          <h3 class="skill-card__title">NLP &amp; Traitement Texte</h3>
+          <div class="badge-list">
+            <span class="badge">spaCy</span>
+            <span class="badge">HuggingFace</span>
+            <span class="badge">Transformers</span>
+            <span class="badge">OCR</span>
+            <span class="badge">NER</span>
+            <span class="badge">Résumé automatique</span>
+            <span class="badge">Similarité cosinus</span>
+          </div>
+        </div>
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <h3 class="skill-card__title">Business Intelligence</h3>
+          <div class="badge-list">
+            <span class="badge">Power BI</span>
+            <span class="badge">Talend</span>
+            <span class="badge">ETL</span>
+            <span class="badge">Data Warehouse</span>
+            <span class="badge">Tableau Public</span>
+            <span class="badge">KPIs</span>
+          </div>
+        </div>
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+          </div>
+          <h3 class="skill-card__title">Langages</h3>
+          <div class="badge-list">
+            <span class="badge">Python</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">PHP</span>
+            <span class="badge">C</span>
+            <span class="badge">C++</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+          </div>
+          <h3 class="skill-card__title">Frameworks &amp; Tech</h3>
+          <div class="badge-list">
+            <span class="badge">Django</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">Flask</span>
+            <span class="badge">React.js</span>
+            <span class="badge">Flutter</span>
+            <span class="badge">Laravel</span>
+            <span class="badge">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg>
+          </div>
+          <h3 class="skill-card__title">Bases de Données &amp; Outils</h3>
+          <div class="badge-list">
+            <span class="badge">MySQL</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">SQLite</span>
+            <span class="badge">Git</span>
+            <span class="badge">Postman</span>
+            <span class="badge">REST API</span>
+            <span class="badge">MCP</span>
+            <span class="badge">Pydantic</span>
+          </div>
+        </div>
+
+        <div class="skill-card card reveal">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg>
+          </div>
+          <h3 class="skill-card__title">Agents &amp; LLM</h3>
+          <div class="badge-list">
+            <span class="badge">LangGraph</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">Groq</span>
+            <span class="badge">Gemini</span>
+            <span class="badge">Human-in-the-Loop</span>
+            <span class="badge">StateGraph</span>
+            <span class="badge">Multi-Agents</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__tag">Projets</div>
+        <h2 class="section__title gradient-text">Projets Phares</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--blue-indigo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Plateforme NLP Intelligente</h3>
+            <p class="project-card__desc">
+              Plateforme complète avec OCR, classification SVM/RF, NER, résumé automatique,
+              détection de doublons, recherche sémantique, dashboard + export PDF/Excel, auth JWT.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">Python</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">React</span>
+                <span class="badge">spaCy</span>
+                <span class="badge">MongoDB</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--indigo-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Analyse Décisionnelle BI</h3>
+            <p class="project-card__desc">
+              Projet BI end-to-end : ETL (nettoyage, transformation), Data Warehouse (étoile),
+              tableaux de bord interactifs avec KPIs.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">Power BI</span>
+                <span class="badge">Talend</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Excel</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--cyan-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Web IA – Classification d'Images</h3>
+            <p class="project-card__desc">
+              Application web ML pour classification d'images en temps réel avec pipeline
+              backend complet upload → prédiction.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">Python</span>
+                <span class="badge">Django</span>
+                <span class="badge">Machine Learning</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--purple-pink" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">No9taty – Gestion des Notes</h3>
+            <p class="project-card__desc">
+              App mobile de gestion des notes et semestres, calcul automatique des moyennes,
+              export CSV. Modèle BDD MERISE, CRUD complet.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">Flutter</span>
+                <span class="badge">SQLite</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--blue-cyan" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Sayaraty – Auto-École</h3>
+            <p class="project-card__desc">
+              Numérisation complète d'une auto-école : élèves, moniteurs, planning leçons,
+              suivi progression, préparation examens.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">PHP</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">MySQL</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--green-teal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Gestion des Formations</h3>
+            <p class="project-card__desc">
+              Plateforme web responsive pour gestion des sessions de formation et des participants.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">React.js</span>
+                <span class="badge">JavaScript</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+        <article class="project-card card reveal">
+          <div class="project-card__banner project-card__banner--clinai" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5" width="40" height="40"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1 1 .03 2.798-1.414 2.798H4.212c-1.444 0-2.414-1.798-1.414-2.798L4.2 15.3"/></svg>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">ClinAI — Workflow Multi-Agents Clinique</h3>
+            <p class="project-card__desc">
+              Système SMA d'orientation clinique simulée avec LangGraph : 4 agents spécialisés,
+              Human-in-the-Loop, intégration MCP, API FastAPI et interface Streamlit 4 écrans.
+            </p>
+            <div class="project-card__footer">
+              <div class="badge-list">
+                <span class="badge">LangGraph</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">MCP</span>
+                <span class="badge">Streamlit</span>
+                <span class="badge">Groq</span>
+              </div>
+              <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="project-card__github" aria-label="Voir sur GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-card__overlay">
+            <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Voir le projet</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+
+      <div class="contact__left reveal">
+        <div class="section__tag">Contact</div>
+        <h2 class="section__title gradient-text">Travaillons Ensemble</h2>
+        <p class="contact__text">
+          Une idée de projet ? Un besoin en IA ou Data Science ?
+          Mon inbox est ouvert.
+        </p>
+
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            </span>
+            <span>Berkane, Maroc</span>
+          </div>
+          <a href="mailto:bassor.brahim1@gmail.com" class="contact__info-item contact__info-item--link">
+            <span class="contact__info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            </span>
+            <span>bassor.brahim1@gmail.com</span>
+          </a>
+          <a href="tel:+212628579641" class="contact__info-item contact__info-item--link">
+            <span class="contact__info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            </span>
+            <span>+212 628 579 641</span>
+          </a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/brahim-bassor-006b04198/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:bassor.brahim1@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__right reveal">
+        <form class="contact-form card" id="contact-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="name">Votre Nom</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Brahim Bassor" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Votre Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="exemple@email.com" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Votre Message</label>
+            <textarea class="form-input form-textarea" id="message" name="message" rows="4" placeholder="Bonjour Brahim, j'aimerais..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+            <span class="btn-text">Envoyer le message</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <a href="#hero" class="footer__logo" aria-label="Retour en haut">&lt; B.B /&gt;</a>
+        <p class="footer__tagline">© 2025 Brahim Bassor — Engineered for Intelligence.</p>
+        <div class="footer__links">
+          <a href="https://github.com/ELbihi" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/brahim-bassor-006b04198/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:bassor.brahim1@gmail.com">Email</a>
+          <a href="assets/img/brahim_bassor(bihi).pdf" download>CV</a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <a href="#hero">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
