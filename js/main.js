@@ -74,7 +74,7 @@
      3. TYPEWRITER ANIMATION
   ---------------------------------------------------------- */
   const subtitles = [
-    'Ingénieur IA & Data Science',
+    'AI & Data Science Engineer',
     'NLP & Machine Learning',
     'Full-stack Developer',
   ];
@@ -194,12 +194,12 @@
 
       // Basic validation
       if (!name || !email || !message) {
-        showFormFeedback('Veuillez remplir tous les champs.', 'error');
+        showFormFeedback('Please fill in all fields.', 'error');
         return;
       }
 
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        showFormFeedback('Adresse email invalide.', 'error');
+        showFormFeedback('Invalid email address.', 'error');
         return;
       }
 
@@ -207,18 +207,18 @@
       submitBtn.disabled = true;
       const btnText = submitBtn.querySelector('.btn-text');
       const original = btnText.textContent;
-      btnText.textContent = 'Envoi en cours…';
+      btnText.textContent = 'Sending…';
 
       // Mailto fallback (works without a backend on GitHub Pages)
       const subject  = encodeURIComponent(`Portfolio Contact — ${name}`);
-      const body     = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`);
+      const body     = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
       const mailtoURL = `mailto:bassor.brahim1@gmail.com?subject=${subject}&body=${body}`;
 
       // Small delay for UX feel
       setTimeout(() => {
         window.location.href = mailtoURL;
-        btnText.textContent = 'Message envoyé !';
-        showFormFeedback('Votre client mail va s\'ouvrir. Merci !', 'success');
+        btnText.textContent = 'Message sent!';
+        showFormFeedback('Your mail client will open. Thanks!', 'success');
 
         setTimeout(() => {
           submitBtn.disabled = false;
