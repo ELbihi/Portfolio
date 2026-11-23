@@ -828,6 +828,8 @@ button { cursor: pointer; font-family: var(--font-sans); }
   object-position: center top;
 }
 
+.project-card__banner--studio-login img { object-position: center 79%; }
+
 .project-card__banner--logo img,
 .project-card__banner--mobile img {
   object-fit: contain;
