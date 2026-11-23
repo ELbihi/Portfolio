@@ -74,9 +74,9 @@
      3. TYPEWRITER ANIMATION
   ---------------------------------------------------------- */
   const subtitles = [
-    'AI & Data Science Engineer',
-    'NLP & Machine Learning',
-    'Full-stack Developer',
+    'AI & Data Science',
+    'Generative AI & Machine Learning',
+    'Business Intelligence & Full-stack Development',
   ];
 
   const typewriterEl = document.getElementById('typewriter-text');
